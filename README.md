@@ -129,25 +129,24 @@ methods perform.
 
 # 4. Assignment Specifics – Tasks
 
-###### 1. Implement a Manhattan distance heuristic (heur manhattan distance(state)). This heuristic will
-be used to estimate how many moves a current state is from a goal state. The Manhattan distance
+###### 1. Implement a Manhattan distance heuristic (heur manhattan distance(state)). 
+> This heuristic will be used to estimate how many moves a current state is from a goal state. The Manhattan distance
 between coordinates(x0, y0) and (x1, y1) is |x0−x1|+|y0−y1|. Your implementation should calculate
 the sum of Manhattan distances between each box that has yet to be stored and the storage point
 nearest to it that is permitted by the storage restrictions.
 Ignore the positions of obstacles in your calculations and assume that many boxes can be stored at
 one location.
 ###### 2. Implement Anytime Greedy Best-First Search (anytime gb f s(initial state,heur f n,timebound)).
-Details regarding this algorithm are provided in the next section.
+> Details regarding this algorithm are provided in the next section.
 ###### 3. Implement Anytime Weighted A* (anytime weighted astar(initial state,heur f n,weight,timebound)).
-Details regarding this algorithm are provided in the next section.
+> Details regarding this algorithm are provided in the next section.
 Note that your implementation will require you to instantiate a SearchEngine object with a search
 strategy that is ‘custom’. You must therefore create an f-value function (f val f unction(sNode,weight))
 and remember to provide this when you execute init search.
-###### 4. Implement a non-trivial heuristic for Sokoban that improves on the Manhattan distance heuristic
-(heur alternate(state)). We will provide a separate evaluation document that specifies the performance we expect from your heuristic.
-###### 5. You should give five tips (2 sentences each) as if you were advising someone who was attempting
-this problem for this first time on what to do. Write these tips in tips.txt.
-Note that when we are testing your code, we will limit each run of your algorithm on teach.cs to 8
+###### 4. Implement a non-trivial heuristic for Sokoban that improves on the Manhattan distance heuristic (heur alternate(state)). 
+> We will provide a separate evaluation document that specifies the performance we expect from your heuristic.
+###### 5. You should give five tips (2 sentences each) as if you were advising someone who was attempting this problem for this first time on what to do. Write these tips in tips.txt.
+> Note that when we are testing your code, we will limit each run of your algorithm on teach.cs to 8
 seconds. Instances that are not solved within this limit will provide an interesting evaluation metric:
 failure rate.
 
